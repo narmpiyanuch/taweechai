@@ -6,7 +6,8 @@ import { useRef, useState } from "react";
 const features = [
   {
     title: "คุณภาพมาตรฐาน",
-    description: "น้ำดื่มผ่านกระบวนการผลิตที่ทันสมัย ผ่านการตรวจสอบคุณภาพตามมาตรฐาน",
+    description:
+      "น้ำดื่มผ่านกระบวนการผลิตที่ทันสมัย ผ่านการตรวจสอบคุณภาพตามมาตรฐาน",
     icon: "✨",
   },
   {
@@ -29,27 +30,27 @@ const features = [
 const products = [
   {
     id: 1,
-    name: 'น้ำดื่มชนิดถัง',
-    description: 'น้ำดื่มบรรจุขวดพลาสติก PET ปลอดสาร BPA',
-    image: '/images/products/pic1.jpg'
+    name: "น้ำดื่มชนิดถัง",
+    description: "น้ำดื่มบรรจุขวดพลาสติก PET ปลอดสาร BPA",
+    image: "/images/products/pic1.jpg",
   },
   {
     id: 2,
-    name: 'น้ำดื่มชนิดขวด',
-    description: 'น้ำดื่มขนาดพกพาสะดวก เหมาะสำหรับการเดินทาง',
-    image: '/images/products/pic2.jpg'
+    name: "น้ำดื่มชนิดขวด",
+    description: "น้ำดื่มขนาดพกพาสะดวก เหมาะสำหรับการเดินทาง",
+    image: "/images/products/pic2.jpg",
   },
   {
     id: 3,
-    name: 'น้ำดื่มชนิดแก้ว',
-    description: 'น้ำดื่มถังสำหรับใช้ในครัวเรือนและสำนักงาน',
-    image: '/images/products/pic4.jpg'
+    name: "น้ำดื่มชนิดแก้ว",
+    description: "น้ำดื่มถังสำหรับใช้ในครัวเรือนและสำนักงาน",
+    image: "/images/products/pic4.jpg",
   },
   {
     id: 4,
-    name: 'รับผลิตน้ำดื่มติดแบรนด์',
-    description: 'น้ำดื่มขนาดใหญ่ เหมาะสำหรับการจัดเลี้ยง',
-    image: '/images/products/pic3.jpg'
+    name: "รับผลิตน้ำดื่มติดแบรนด์",
+    description: "น้ำดื่มขนาดใหญ่ เหมาะสำหรับการจัดเลี้ยง",
+    image: "/images/products/pic3.jpg",
   },
 ];
 
@@ -65,7 +66,7 @@ export default function Home() {
   const [selectedTip, setSelectedTip] = useState<TipImage | null>(null);
 
   const scrollToProducts = () => {
-    productsRef.current?.scrollIntoView({ behavior: 'smooth' });
+    productsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const tips: TipImage[] = [
@@ -73,20 +74,23 @@ export default function Home() {
       src: "/images/info/tip1.png",
       alt: "Tip 1",
       title: "ดื่มน้ำหลังตื่นนอน",
-      description: "ดื่มน้ำ 1-2 แก้วหลังตื่นนอน ช่วยกระตุ้นระบบขับถ่ายและเติมความชุ่มชื้นให้ร่างกาย"
+      description:
+        "ดื่มน้ำ 1-2 แก้วหลังตื่นนอน ช่วยกระตุ้นระบบขับถ่ายและเติมความชุ่มชื้นให้ร่างกาย",
     },
     {
       src: "/images/info/tip4.png",
       alt: "Tip 2",
       title: "ดื่มน้ำก่อนมื้ออาหาร",
-      description: "ดื่มน้ำ 1 แก้วก่อนมื้ออาหาร 30 นาที ช่วยให้อิ่มเร็วขึ้นและดีต่อระบบย่อยอาหาร"
+      description:
+        "ดื่มน้ำ 1 แก้วก่อนมื้ออาหาร 30 นาที ช่วยให้อิ่มเร็วขึ้นและดีต่อระบบย่อยอาหาร",
     },
     {
       src: "/images/info/tip5.png",
       alt: "Tip 3",
       title: "ดื่มน้ำระหว่างวัน",
-      description: "จิบน้ำบ่อยๆ ตลอดวัน อย่าปล่อยให้ร่างกายขาดน้ำ โดยเฉพาะช่วงอากาศร้อนหรือออกกำลังกาย"
-    }
+      description:
+        "จิบน้ำบ่อยๆ ตลอดวัน อย่าปล่อยให้ร่างกายขาดน้ำ โดยเฉพาะช่วงอากาศร้อนหรือออกกำลังกาย",
+    },
   ];
 
   return (
@@ -100,7 +104,8 @@ export default function Home() {
                 ทวีชัยน้ำดื่ม
               </h1>
               <p className="text-lg mb-6">
-                จัดจำหน่ายน้ำดื่มบรรจุภัณฑ์และรับผลิตน้ำดื่มติดแบรนด์ (OEM) <br />
+                จัดจำหน่ายน้ำดื่มบรรจุภัณฑ์และรับผลิตน้ำดื่มติดแบรนด์ (OEM){" "}
+                <br />
                 โรงงานมาตรฐาน อ.ปากช่อง จ.นครราชสีมา
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
@@ -111,7 +116,6 @@ export default function Home() {
                   ดูสินค้า
                 </button>
               </div>
-              
               <div className="bg-white/10 backdrop-blur-sm p-4 md:p-5 rounded-xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -119,31 +123,83 @@ export default function Home() {
                       <span className="mr-2">📞</span> ติดต่อเรา
                     </h3>
                     <p className="text-white">
-                      044-315061, 044-316132<br />
-                      081-8764800, 080-3349640<br />
+                      044-315061, 044-316132
+                      <br />
+                      081-8764800, 080-3349640
+                      <br />
                       080-8249122
                     </p>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-3 flex items-center">
-                      <span className="mr-2">📍</span> ที่ตั้ง
+                      <svg
+                        className="w-5 h-5 mr-2"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      Facebook
                     </h3>
-                    <a 
-                      href="https://maps.app.goo.gl/bBavRpmrsv4i2nRz5" 
-                      target="_blank" 
+                    <a
+                      href="https://www.facebook.com/taweechaiwater"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-white hover:text-blue-300 underline transition-colors inline-flex items-center"
                     >
-                      ดูแผนที่บน Google Maps
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      Facebook Page
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4 ml-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-3 flex items-center">
+                      <span className="mr-2">📍</span> ที่ตั้ง
+                    </h3>
+                    <a
+                      href="https://maps.app.goo.gl/bBavRpmrsv4i2nRz5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-blue-300 underline transition-colors inline-flex items-center"
+                    >
+                      Google Maps
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4 ml-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
                       </svg>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             {/* Hero Image */}
             <div className="lg:w-1/2 w-full flex justify-center items-start">
               <div className="relative w-full max-w-xs h-auto">
@@ -185,10 +241,15 @@ export default function Home() {
       {/* Products Section */}
       <section ref={productsRef} className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">สินค้าของเรา</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">
+            สินค้าของเรา
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product) => (
-              <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div
+                key={product.id}
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
                 <div className="relative h-74">
                   <div className="relative w-full h-full">
                     <Image
@@ -209,11 +270,16 @@ export default function Home() {
       {/* Tips Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">ประโยชน์ของการดื่มน้ำ</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">
+            ประโยชน์ของการดื่มน้ำ
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {tips.map((tip, index) => (
-              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-                <div 
+              <div
+                key={index}
+                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+              >
+                <div
                   className="relative h-48 cursor-pointer"
                   onClick={() => setSelectedTip(tip)}
                 >
@@ -226,7 +292,9 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">{tip.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                    {tip.title}
+                  </h3>
                   <p className="text-gray-600">{tip.description}</p>
                 </div>
               </div>
@@ -237,17 +305,30 @@ export default function Home() {
 
       {/* Image Modal */}
       {selectedTip && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
           onClick={() => setSelectedTip(null)}
         >
-          <div className="relative max-w-4xl w-full max-h-[90vh]" onClick={e => e.stopPropagation()}>
-            <button 
+          <div
+            className="relative max-w-4xl w-full max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
               onClick={() => setSelectedTip(null)}
               className="absolute -top-10 right-0 text-white hover:text-gray-300"
             >
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
             <div className="bg-white rounded-lg overflow-hidden">
@@ -261,7 +342,9 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2 text-gray-800">{selectedTip.title}</h3>
+                <h3 className="text-2xl font-bold mb-2 text-gray-800">
+                  {selectedTip.title}
+                </h3>
                 <p className="text-gray-600">{selectedTip.description}</p>
               </div>
             </div>
@@ -272,9 +355,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-blue-900 text-white py-4 text-center">
         <div className="container mx-auto px-4">
-              <p>
-                © {new Date().getFullYear()} ทวีชัยน้ำดื่ม. สงวนลิขสิทธิ์ทุกประการ.
-              </p>
+          <p>
+            © {new Date().getFullYear()} ทวีชัยน้ำดื่ม. สงวนลิขสิทธิ์ทุกประการ.
+          </p>
         </div>
       </footer>
     </div>
